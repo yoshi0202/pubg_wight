@@ -35,4 +35,4 @@ client.on('message', msg => {
 
 
 // Discordへの接続
-client.login(token);
+client.login(process.env.BOT_TOKEN);
