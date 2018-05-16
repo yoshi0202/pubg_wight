@@ -4,7 +4,7 @@
   "description": "wight likes pubg.",
   "main": "app.js",
   "scripts":{
-		"bot":"node ./app.js"
+		"start":"node app.js"
 	},
   "author": "",
   "license": "ISC",
