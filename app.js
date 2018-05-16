@@ -18,19 +18,18 @@ client.on('ready', () => {
 
 
 // メッセージがあったら何かをする
-client.on('message', message => {
+client.on('message', msg => {
     // メッセージの文字列による条件分岐
-    if (message.content === 'さっ') {
+    if (msg.content === 'さっ') {
 
-        let channel = message.channel;
-        let author = message.author.username;
         let reply_text = `ワイトもそう思います。`;
 
+        msg.reply(reply_text);
         // そのチェンネルにメッセージを送信する
-        channel.reply(reply_text)
-            .then(message => console.log(`Sent message: ${reply_text}`))
-            .catch(console.error);
-        return;
+        // channel.reply(reply_text)
+        //     .then(message => console.log(`Sent message: ${reply_text}`))
+        //     .catch(console.error);
+        // return;
     }
 });
 
