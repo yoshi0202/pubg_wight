@@ -4,12 +4,13 @@
 
 // discord.js モジュールのインポート
 const Discord = require('discord.js');
+const config = require(__dirname + '/config.json');
 
 // Discord Clientのインスタンス作成
 const client = new Discord.Client();
 
 // トークンの用意
-const token = 'NDQ2Mjk3MDMzMTMzNzg1MDkx.Dd2-Fg.jA3ovUOZsVrIlnXaKAud5SMc-T8';
+const token = config.app.token;
 
 // メッセージがあったら何かをする
 client.on('message', msg => {
