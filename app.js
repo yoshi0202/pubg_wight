@@ -1,6 +1,3 @@
-/*
-* 特定の呪文に反応するサンプルコード
-*/
 
 // discord.js モジュールのインポート
 const Discord = require('discord.js');
@@ -13,9 +10,10 @@ const client = new Discord.Client();
 const token = config.app.token;
 
 // メッセージがあったら何かをする
-client.on('message', msg => {
+client.on('message', function(msg){
+    msg.content = msg.content.toUpperCase();
     // メッセージの文字列による条件分岐
-    if (msg.content === 'さっ') {
+    if (msg.content === 'PUBG') {
 
         let reply_text = `ワイトもそう思います。`;
 
