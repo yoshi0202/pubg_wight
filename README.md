@@ -1,4 +1,0 @@
-# pubg_wight
-ワイトはPUBG大好き
-Discord上で呟くと返信してくれます。
-config.json内のtokenを編集してからご利用ください。
